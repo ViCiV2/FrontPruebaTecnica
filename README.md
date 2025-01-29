@@ -22,7 +22,7 @@ Para ejecutar la aplicación.
 + **axios**:  Me permitió manejar peticiones al back de una forma más sencilla.
 
 
-#####UserForm.js
+####UserForm.js
 Este archivo contiene la mayor cantidad de confiscación, lo especial de este archivo es que dependiendo de si es edición o es creación va a actuar, para ello use monitores de estados, de hecho, fue ampliamente usado para monitorear continente las acciones del usuario, aquí también se hizo hicieron las validaciones y la carga de imagen a de imgbb.
 
 #####TableUser
