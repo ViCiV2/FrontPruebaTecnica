@@ -41,7 +41,7 @@ La utilice para enrutar las vistas mas importantes en general.
 
 
 #### Desafios
-Uno de los principales desafíos fue integrar el mapa ya que como Google puede cobrar por ello empecé en la búsqueda e implementación alternativa de como realizar el mapa, al final se implementó con éxito.
+Uno de los principales desafíos fue integrar el mapa ya que como Google puede cobrar por ello empecé en la búsqueda e implementación alternativa de como realizar el mapa, al final se implementó con éxito  gracias a leaflet.
 
 
 
