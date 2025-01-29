@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TableUserList from "./components/TableUserList";
+import UserFrom from "./components/UserForm";
+import { Container } from "@mui/material";
+import Menu from "./components/Navbar";
 
-function App() {
+
+/*Se definen las rutas principales de navegación*/
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Menu />
+      <Container>
+        <Routes>
+          <Route path="/" element={<TableUserList />} />
+          <Route path="/user/new" element={<UserFrom />} />
+          <Route path="/user/:id/edit" element={<UserFrom />} />
+        </Routes>
+      </Container>
+    </BrowserRouter>
   );
 }
-
-export default App;
